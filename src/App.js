@@ -15,14 +15,16 @@ function App() {
   return (
     <div className="App">
       <div>
-        <ul>
-          {records.map((list, index) => (
-            <li key={index}>
-              {list.id} | {list.title} | {list.url}
-            </li>
-          ))}
-        </ul>
+        <test></test>
       </div>
+      <ul>
+        {records.map((list, index) => (
+          <li key={index}>
+            {list.id} | {list.title}
+            <img src={list.url} alt="Cheetah!" />
+          </li>
+        ))}
+      </ul>
     </div>
   );
 }
