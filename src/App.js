@@ -1,30 +1,12 @@
-import "./App.css";
-import { useEffect, useState } from "react";
-import React from "react";
+import React, { useEffect, useState } from "react";
+import Gallery from "./components/Gallery";
+import { Leftbar } from "./components/LeftBar";
 
 function App() {
-  const [records, setRecords] = useState([]);
-
-  useEffect(() => {
-    fetch("https://jsonplaceholder.typicode.com/photos")
-      .then((response) => response.json())
-      .then((data) => setRecords(data))
-      .catch((err) => console.log(err));
-  }, []);
-
   return (
     <div className="App">
-      <div>
-        <test></test>
-      </div>
-      <ul>
-        {records.map((list, index) => (
-          <li key={index}>
-            {list.id} | {list.title}
-            <img src={list.url} alt="Cheetah!" />
-          </li>
-        ))}
-      </ul>
+      <Leftbar></Leftbar>
+      <Gallery></Gallery>
     </div>
   );
 }
