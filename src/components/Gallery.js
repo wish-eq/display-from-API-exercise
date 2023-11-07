@@ -10,21 +10,25 @@ function Gallery() {
       .catch((err) => console.log(err));
   }, []);
 
-  const allowedIds = [1, 2, 4];
+  const allowedIds = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 
   const filteredRecords = records.filter((record) =>
     allowedIds.includes(record.id)
   );
   return (
-    <div>
-      <ul>
-        {filteredRecords.map((record) => (
-          <li id="each" key={record.id}>
-            {record.id} | {record.title}
-            <img src={record.url} alt="Cheetah!" />
-          </li>
-        ))}
-      </ul>
+    <div class="gallery">
+      <div class="photo-header">
+        <p>Photos</p>
+      </div>
+      <div class="photo-gallery">
+        <ul class="photo-list">
+          {filteredRecords.map((record) => (
+            <li key={record.id}>
+              <img class="photo" src={record.url} alt="Cheetah!" />
+            </li>
+          ))}
+        </ul>
+      </div>
     </div>
   );
 }
