@@ -87,11 +87,16 @@ body {
 }
 
 .photo {
-  width: 300px;
-  height: 300px;
+  width: 200px;
+  height: 200px;
 }
 
 .gallery {
   background-color: rgb(255, 213, 196);
   display: grid;
+}
+
+.photo-list {
+  display: grid;
+  grid-template-columns: 200px 200px 200px;
 }
