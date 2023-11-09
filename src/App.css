@@ -83,22 +83,62 @@ body {
 }
 
 /* photo */
-.photo-list {
-  /* remove bullet */
-  list-style-type: none;
-}
-
-.photo {
-  width: 200px;
-  height: 200px;
-}
 
 .gallery {
   background-color: rgb(255, 213, 196);
   display: grid;
+  grid-template-rows: 20vh 80vh;
+  /* min-height: 100vh; */
+  height: 100vh;
+}
+
+.photo-header-container {
+  background-color: blue;
+}
+
+.photo-gallery-container {
+  background-color: brown;
+  display: grid;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  height: 100%;
+}
+
+.photo-list-container {
+  background-color: burlywood;
+  display: grid;
+  justify-items: center;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 .photo-list {
+  /* remove bullet */
+  list-style-type: none;
   display: grid;
-  grid-template-columns: 200px 200px 200px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  row-gap: 10px;
+  column-gap: 150px;
+  width: 100%;
+  overflow: visible;
+  margin: 0;
+  padding: 0;
+}
+
+.photo-container {
+  min-width: 100px;
+  max-width: 200px;
+  min-height: 100px;
+  max-height: 200px;
+  margin: 30px;
+  padding: 0;
+}
+
+.photo {
+  width: 100%;
+  height: 100%;
 }
