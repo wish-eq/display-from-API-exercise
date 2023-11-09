@@ -3,11 +3,13 @@ body {
   padding: 0;
   min-height: 100vh;
   background-color: white;
+  font-family: "Trebuchet MS";
 }
 
 .grid-container {
   display: grid;
   grid-template-columns: 25% 75%;
+  min-height: 100vh;
 }
 
 .side-bar {
