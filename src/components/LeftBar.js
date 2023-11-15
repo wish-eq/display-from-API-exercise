@@ -25,7 +25,9 @@ export class Leftbar extends Component {
             <p class="menu-header menu-line">Library</p>
             <li class="menu-line">
               <FaImage class="icon" />
-              Photos
+              <a href="https://stackoverflow.com/questions/27539262/whats-the-difference-between-align-content-and-align-items">
+                Photos
+              </a>
             </li>
             <li class="menu-line">
               <FaImages class="icon" />
