@@ -9,53 +9,36 @@ import {
   FaGoogleDrive,
   FaAlignJustify,
 } from "react-icons/fa";
-import profile from "../image/profile.png";
+
+import ProfileBox from "./ProfileBox";
+import LibraryBox from "./LibraryBox";
 
 export class Leftbar extends Component {
   render() {
     return (
       <div class="side-bar">
-        <div class="profile-container">
-          <img id="profile-img" src={profile} alt="profile" />
-          <p class="name">Wish</p>
-          <p class="email">wish.eq@gmail.com</p>
+        <div class="top-side-bar">
+          <ProfileBox></ProfileBox>
+          <LibraryBox></LibraryBox>
+          <div class="collections-container">
+            <ul class="option-list">
+              <p class="menu-header menu-line">Collections</p>
+              <li class="menu-line">
+                <FaMemory class="icon" />
+                Memories
+              </li>
+              <li class="menu-line">
+                <FaUserFriends class="icon" />
+                People
+              </li>
+              <li class="menu-line">
+                <FaLocationArrow class="icon" />
+                Locations
+              </li>
+            </ul>
+          </div>
         </div>
-        <div class="library-container">
-          <ul class="option-list">
-            <p class="menu-header menu-line">Library</p>
-            <li class="menu-line">
-              <FaImage class="icon" />
-              <a href="https://stackoverflow.com/questions/27539262/whats-the-difference-between-align-content-and-align-items">
-                Photos
-              </a>
-            </li>
-            <li class="menu-line">
-              <FaImages class="icon" />
-              Albums
-            </li>
-            <li class="menu-line">
-              <FaFolder class="icon" />
-              Folders
-            </li>
-          </ul>
-        </div>
-        <div class="collections-container">
-          <ul class="option-list">
-            <p class="menu-header menu-line">Collections</p>
-            <li class="menu-line">
-              <FaMemory class="icon" />
-              Memories
-            </li>
-            <li class="menu-line">
-              <FaUserFriends class="icon" />
-              People
-            </li>
-            <li class="menu-line">
-              <FaLocationArrow class="icon" />
-              Locations
-            </li>
-          </ul>
-        </div>
+
         <div class="storage-container">
           <ul class="option-list">
             <p class="menu-header menu-line">Storage</p>
@@ -69,13 +52,15 @@ export class Leftbar extends Component {
             </li>
           </ul>
         </div>
-        <div class="setting-container">
-          <ul class="option-list">
-            <p class="setting menu-line">
-              <FaAlignJustify class="icon" />
-              Settings
-            </p>
-          </ul>
+        <div>
+          <div class="setting-container">
+            <ul class="option-list">
+              <p class="setting menu-line">
+                <FaAlignJustify class="icon" />
+                Settings
+              </p>
+            </ul>
+          </div>
         </div>
       </div>
     );
