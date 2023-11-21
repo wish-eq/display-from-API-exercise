@@ -1,14 +1,5 @@
 import React, { Component } from "react";
-import {
-  FaLocationArrow,
-  FaImage,
-  FaImages,
-  FaFolder,
-  FaMemory,
-  FaUserFriends,
-  FaGoogleDrive,
-  FaAlignJustify,
-} from "react-icons/fa";
+import { FaImage, FaImages, FaFolder } from "react-icons/fa";
 
 export class LibraryBox extends Component {
   render() {
