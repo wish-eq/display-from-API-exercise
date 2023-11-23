@@ -136,7 +136,7 @@ body {
 }
 
 .photo-gallery-container {
-  background-color: brown;
+  background-color: red;
   display: flex;
   flex-direction: column;
   justify-content: center;
