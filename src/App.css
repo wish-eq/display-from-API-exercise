@@ -140,6 +140,12 @@ body {
   background-color: #bfa2db;
 }
 
+.header-icon:hover {
+  color: white;
+  background-color: #b19bc7;
+  cursor: pointer;
+}
+
 .option-list {
   list-style-type: none;
   margin: 0 0 0 10px;
