@@ -6,7 +6,7 @@ export class CollectionBox extends Component {
     return (
       <div class="collections-container">
         <ul class="option-list">
-          <p class="menu-header menu-line">Collections</p>
+          <p class="menu-header">Collections</p>
           <li class="menu-line">
             <FaMemory class="icon" />
             Memories

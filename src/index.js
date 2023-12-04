@@ -2,11 +2,30 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App";
+import { createBrowserRouter, RouterProvider, Route } from "react-router-dom";
+import AlbumPage from "./pages/AlbumPage";
+import FoldersPage from "./pages/FoldersPage";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <App />,
+  },
+  {
+    path: "album",
+    element: <AlbumPage></AlbumPage>,
+  },
+  {
+    path: "folder",
+    element: <FoldersPage></FoldersPage>,
+  },
+]);
+
 root.render(
   <React.StrictMode>
-    <App />
+    <RouterProvider router={router} />
   </React.StrictMode>
 );
 

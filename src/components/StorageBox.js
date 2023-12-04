@@ -6,7 +6,7 @@ export class StorageBox extends Component {
     return (
       <div class="storage-container">
         <ul class="option-list">
-          <p class="menu-header menu-line">Storage</p>
+          <p class="menu-header">Storage</p>
           <li class="menu-line">
             <FaGoogleDrive class="icon" />
             OneDrive
