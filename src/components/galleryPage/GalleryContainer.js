@@ -10,7 +10,7 @@ export default function GalleryContainer() {
       .catch((err) => console.log(err));
   }, []);
 
-  const allowedIds = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
+  const allowedIds = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 25];
 
   const filteredRecords = records.filter((record) =>
     allowedIds.includes(record.id)
