@@ -199,3 +199,7 @@ body {
   padding: 42px 0 0 52px;
   margin: 0;
 }
+
+.content-container {
+  background-color: #fffbfa;
+}

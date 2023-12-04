@@ -1,6 +1,6 @@
 import React from "react";
-import Gallery from "./components/Gallery";
-import { Leftbar } from "./components/LeftBar";
+import Gallery from "./components/galleryPage/Gallery";
+import { Leftbar } from "./components/leftBar/LeftBar";
 import "./App.css";
 
 function App() {

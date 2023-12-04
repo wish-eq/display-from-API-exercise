@@ -1,6 +1,6 @@
 import React from "react";
-import Album from "../components/Album";
-import { Leftbar } from "../components/LeftBar";
+import Album from "../components/albumPage/Album";
+import { Leftbar } from "../components/leftBar/LeftBar";
 
 import "../App.css";
 
