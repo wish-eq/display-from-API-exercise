@@ -32,11 +32,11 @@ body {
 }
 
 .top-side-bar {
-  height: 60%;
+  /* height: 60%; */
 }
 
 .bottom-side-bar {
-  height: 40%;
+  /* height: 40vh; */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -73,6 +73,7 @@ body {
 
 .storage-container {
   /* background-color: #fffbfa; */
+  padding-bottom: 30px;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -86,6 +87,11 @@ body {
   flex-direction: column;
   justify-content: flex-start;
 }
+
+.setting.menu-line {
+  cursor: pointer;
+}
+
 #profile-img {
   width: 20%;
   margin: 10px;
@@ -233,4 +239,34 @@ body {
 
 .content-container {
   background-color: #fffbfa;
+}
+
+.modal,
+.overlay {
+  width: 100vw;
+  height: 100vh;
+  top: 0%;
+  left: 0%;
+  right: 0%;
+  bottom: 0%;
+  position: fixed;
+  z-index: 999;
+}
+
+.overlay {
+  background: rgba(49, 49, 49, 0.8);
+}
+
+.modal-content {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  line-height: 1.4;
+  background: white;
+  padding: 14px 28px;
+  border-radius: 3px;
+  max-width: 600px;
+  min-width: 300px;
+  z-index: 999;
 }
