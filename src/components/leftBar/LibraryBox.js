@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 export class LibraryBox extends Component {
   render() {
     return (
-      <div class="library-container">
+      <div className="library-container flex flex-col justify-start">
         <ul class="option-list">
           <p class="menu-header">Library</p>
 

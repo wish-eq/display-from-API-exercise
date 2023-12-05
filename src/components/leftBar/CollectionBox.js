@@ -4,7 +4,7 @@ import { FaLocationArrow, FaMemory, FaUserFriends } from "react-icons/fa";
 export class CollectionBox extends Component {
   render() {
     return (
-      <div class="collections-container">
+      <div className="collections-container flex flex-col justify-start">
         <ul class="option-list">
           <p class="menu-header">Collections</p>
           <li class="menu-line">

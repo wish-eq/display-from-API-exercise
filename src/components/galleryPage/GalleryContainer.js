@@ -17,16 +17,17 @@ export default function GalleryContainer() {
   );
 
   return (
-    <div class="photo-gallery-container">
-      <div class="photo-list-container">
-        <ul class="photo-list">
-          {filteredRecords.map((record) => (
-            <li class="photo-container" key={record.id}>
-              <img class="photo" src={record.url} alt="Photo!" />
-            </li>
-          ))}
-        </ul>
-      </div>
+    <div class="photo-list-container flex justify-center">
+      <ul class="photo-list grid grid-cols-4 grid-rows-3">
+        {filteredRecords.map((record) => (
+          <li
+            class="photo-container flex justify-center items-center"
+            key={record.id}
+          >
+            <img class="photo" src={record.url} alt="img!" />
+          </li>
+        ))}
+      </ul>
     </div>
   );
 }

@@ -7,7 +7,7 @@ import "../App.css";
 function AlbumPage() {
   return (
     <div className="album">
-      <div class="grid-container">
+      <div className="grid grid-cols-[20%,80%] min-h-screen">
         <Leftbar></Leftbar>
         <Album></Album>
       </div>

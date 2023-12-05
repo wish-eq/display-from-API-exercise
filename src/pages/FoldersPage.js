@@ -6,7 +6,7 @@ import Folder from "../components/folderPage/Folder";
 function FoldersPage() {
   return (
     <div className="App">
-      <div class="grid-container">
+      <div className="grid grid-cols-[20%,80%] min-h-screen">
         <Leftbar></Leftbar>
         <Folder></Folder>
       </div>

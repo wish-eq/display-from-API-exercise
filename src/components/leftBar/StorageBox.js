@@ -4,7 +4,7 @@ import { FaGoogleDrive } from "react-icons/fa";
 export class StorageBox extends Component {
   render() {
     return (
-      <div class="storage-container">
+      <div className="storage-container flex flex-col justify-start">
         <ul class="option-list">
           <p class="menu-header">Storage</p>
           <li class="menu-line">

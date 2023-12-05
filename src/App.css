@@ -2,90 +2,76 @@ body {
   margin: 0;
   padding: 0;
   min-height: 100vh;
-  /* background-color: red; */
   font-family: "Trebuchet MS";
-  /* background-image: url("./image/background.jpeg"); */
-
-  /* https://colorhunt.co/palette/f3f1f5f0d9ffbfa2db7f7c82 (palette) */
-
   height: 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.grid-container {
+/* https://colorhunt.co/palette/f3f1f5f0d9ffbfa2db7f7c82 (palette) */
+
+/* .grid-container {
   display: grid;
   grid-template-columns: 20% 80%;
   min-height: 100vh;
-}
+} */
 
 .side-bar {
   background-color: #f3f1f5;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  /* opacity: 0.91; */
   padding-left: 16px;
   padding-right: 16px;
   min-height: 100%;
-}
-
-.top-side-bar {
-  /* height: 60%; */
+  /* display: flex;
+  flex-direction: column;
+  justify-content: space-between; */
 }
 
 .bottom-side-bar {
-  /* height: 40vh; */
-  display: flex;
+  padding-bottom: 20px;
+  /* display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-between; */
 }
 
 .profile-container {
-  /* background-color: #fffbfa; */
-  width: 100%;
-  display: flex;
+  /* display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: center; */
+  width: 100%;
   opacity: 0.8;
   padding: 20px 0 20px 0;
 }
 .library-container {
-  /* background-color: #fffbfa; */
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-
   margin: 10px 0 20px 0;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: flex-start; */
 }
 
 .collections-container {
-  /* background-color: #fffbfa; */
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
   margin: 20px 0 0 0;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: flex-start; */
 }
 
 .storage-container {
-  /* background-color: #fffbfa; */
   padding-bottom: 30px;
   width: 100%;
-  display: flex;
+  /* display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: flex-start; */
 }
 
 .setting-container {
-  /* background-color: #fffbfa; */
   width: 100%;
-  display: flex;
+  /* display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: flex-start; */
 }
 
 .setting.menu-line {
@@ -162,10 +148,9 @@ body {
 
 .gallery {
   background-color: rgb(255, 213, 196);
-  display: grid;
+  /* display: grid;
   grid-template-rows: 20vh 80vh;
-  /* min-height: 100vh; */
-  height: 100vh;
+  height: 100vh; */
 }
 
 .photo-header-container {
@@ -174,54 +159,46 @@ body {
   text-decoration-color: #bfa2db;
 }
 
-.photo-header-header {
+/* .photo-header-header {
   display: flex;
   justify-content: space-between;
-}
+} */
 
-.photo-gallery-container {
+/* .photo-gallery-container {
   background-color: red;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100%;
-}
+} */
 
 .photo-list-container {
   background-color: #fffbfa;
-  display: flex;
-  justify-content: center;
   height: 100%;
   width: 100%;
   margin: 0;
   padding: 0;
+  /* display: flex;
+  justify-content: center; */
 }
 
 .photo-list {
-  /* remove bullet */
   list-style-type: none;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  /* row-gap: 10px;
-  column-gap: 150px; */
   width: 100%;
   overflow: visible;
   margin: 0;
   padding: 0;
+  /* display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr; */
 }
 
 .photo-container {
-  /* min-width: 100px;
-  max-width: 200px;
-  min-height: 100px;
-  max-height: 200px; */
-  /* margin: 30px; */
   padding: 0;
-  display: flex;
+  /* display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
 }
 
 .photo {
@@ -229,6 +206,8 @@ body {
   height: 156px;
   filter: grayscale(100%);
 }
+
+/* -------- */
 
 .photo-header {
   font-size: 52px;
@@ -254,19 +233,30 @@ body {
 }
 
 .overlay {
-  background: rgba(49, 49, 49, 0.8);
+  background: rgba(49, 49, 49, 0.6);
 }
 
 .modal-content {
   position: absolute;
-  top: 40%;
+  top: 45%;
   left: 50%;
   transform: translate(-50%, -50%);
-  line-height: 1.4;
   background: white;
   padding: 14px 28px;
-  border-radius: 3px;
+  border-radius: 10px;
   max-width: 600px;
-  min-width: 300px;
+  min-width: 400px;
+  min-height: 500px;
   z-index: 999;
+}
+
+.close-modal {
+  color: white;
+  background-color: #bfa2db;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 10px;
+  font-size: 20px;
 }

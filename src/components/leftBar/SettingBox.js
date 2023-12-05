@@ -9,10 +9,7 @@ export default function SettingBox() {
   };
 
   return (
-    <div class="setting-container">
-      {/* <button onClick={toggleModal} className="btn-modal">
-        OPEN
-      </button> */}
+    <div className="setting-container flex flex-col justify-start">
       <ul class="option-list">
         <p class="setting menu-line" onClick={toggleModal}>
           <FaAlignJustify class="icon" />
@@ -21,12 +18,11 @@ export default function SettingBox() {
       </ul>
       {modal && (
         <div className="modal">
-          <div className="overlay"></div>
-          <div className="modal-content">
-            <p>Setting</p>
-
+          <div className="overlay" onClick={toggleModal}></div>
+          <div className="modal-content flex flex-col  items-center">
+            <p className="text-xl font-semibold">Setting</p>
             <button className="close-modal" onClick={toggleModal}>
-              CLOSE
+              Close
             </button>
           </div>
         </div>

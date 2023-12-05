@@ -19,13 +19,13 @@ import SettingBox from "./SettingBox";
 export class Leftbar extends Component {
   render() {
     return (
-      <div class="side-bar">
+      <div className="side-bar flex flex-col justify-between">
         <div class="top-side-bar">
           <ProfileBox></ProfileBox>
           <LibraryBox></LibraryBox>
           <CollectionBox></CollectionBox>
         </div>
-        <div class="bottom-side-bar">
+        <div className="bottom-side-bar flex flex-col justify-between">
           <StorageBox></StorageBox>
 
           <SettingBox></SettingBox>
