@@ -19,7 +19,7 @@ export default function SettingBox() {
       {modal && (
         <div className="modal">
           <div className="overlay" onClick={toggleModal}></div>
-          <div className="modal-content flex flex-col  items-center">
+          <div className="modal-content flex flex-col  items-center justify-between ">
             <p className="text-xl font-semibold">Setting</p>
             <button className="close-modal" onClick={toggleModal}>
               Close
