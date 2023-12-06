@@ -105,11 +105,17 @@ body {
   display: flex;
   align-items: center;
   border-radius: 16px;
+
+  /* background: -webkit-linear-gradient(0deg, transparent 50%, #b295cc 50%);
+  background-size: 720px 80px;
+  transition: 0.8s;
+  margin: 2px; */
 }
 
 .menu-line:hover {
   background-color: #bfa2db;
   color: white;
+  /* background-position: 360px; */
 }
 
 .menu-select {
@@ -207,6 +213,11 @@ body {
   width: 156px;
   height: 156px;
   filter: grayscale(100%);
+  transition: 0.3s;
+}
+
+.photo:hover {
+  transform: scale(1.5);
 }
 
 /* -------- */
@@ -261,6 +272,11 @@ body {
   padding-right: 10px;
   border-radius: 10px;
   font-size: 16px;
+  margin: 10px;
+}
+
+.close-modal:hover {
+  background-color: #b19bc7;
 }
 
 .welcome-container {
@@ -292,13 +308,13 @@ body {
 .welcome-btn {
   color: white;
   font-size: 20px;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  padding-top: 6px;
+  padding-bottom: 6px;
   padding-right: 20px;
   padding-left: 20px;
   border-radius: 20px;
 
-  background: -webkit-linear-gradient(0deg, transparent 50%, #b295cc 50%);
+  background: -webkit-linear-gradient(0deg, transparent 50%, #b19bc7 50%);
   background-color: #bfa2db;
   background-size: 180px 80px;
   transition: 0.5s;

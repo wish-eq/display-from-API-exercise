@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 
 export default function GalleryContainer() {
   const [records, setRecords] = useState([]);
+  const [selectedPhoto, setSelectedPhoto] = useState(null);
 
   useEffect(() => {
     fetch("https://jsonplaceholder.typicode.com/photos")
@@ -16,18 +17,49 @@ export default function GalleryContainer() {
     allowedIds.includes(record.id)
   );
 
+  // modal
+
+  const openModal = (photo) => {
+    setSelectedPhoto(photo);
+  };
+
+  const closeModal = () => {
+    setSelectedPhoto(null);
+  };
+
   return (
-    <div class="photo-list-container flex justify-center">
-      <ul class="photo-list grid grid-cols-4 grid-rows-3">
+    <div className="photo-list-container flex justify-center">
+      <ul className="photo-list grid grid-cols-4 grid-rows-3">
         {filteredRecords.map((record) => (
           <li
-            class="photo-container flex justify-center items-center"
+            className="photo-container flex justify-center items-center"
             key={record.id}
           >
-            <img class="photo" src={record.url} alt="img!" />
+            <img
+              className="photo"
+              src={record.url}
+              alt="img!"
+              onClick={() => openModal(record)}
+            />
           </li>
         ))}
       </ul>
+
+      {selectedPhoto && (
+        <div className="modal">
+          <div className="overlay" onClick={closeModal}></div>
+          <div className="modal-content flex flex-col items-center justify-between">
+            <img
+              className="modal-photo filter grayscale-[100%]"
+              src={selectedPhoto.url}
+              alt="modal-img!"
+            />
+            <button className="close-modal" onClick={closeModal}>
+              Close
+            </button>
+          </div>
+        </div>
+      )}
     </div>
   );
 }

@@ -13,7 +13,7 @@ function App() {
         </div>
         <div>
           <Link to="/gallery" class="welcome-btn">
-            start
+            Start
           </Link>
         </div>
       </div>
