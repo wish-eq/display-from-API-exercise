@@ -9,7 +9,7 @@ export class LibraryBox extends Component {
         <ul class="option-list">
           <p class="menu-header">Library</p>
 
-          <Link class="menu-select" to="/">
+          <Link class="menu-select" to="/gallery">
             <li class="menu-line">
               <FaImage class="icon" />
               Photos

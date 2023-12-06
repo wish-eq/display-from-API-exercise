@@ -264,7 +264,8 @@ body {
 }
 
 .welcome-container {
-  animation: slide-up 2s;
+  animation: slide-up 4s;
+  height: 100vh;
 }
 
 @keyframes slide-up {
@@ -280,4 +281,29 @@ body {
 
 .welcome-text {
   font-size: 5rem;
+  /* background: -webkit-linear-gradient(0deg, transparent 50%, #bfa2db 50%);
+  background-size: 800px 80px;
+  transition: 0.8s; */
+}
+.welcome-text:hover {
+  /* background-position: 400px; */
+}
+
+.welcome-btn {
+  color: white;
+  font-size: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-right: 20px;
+  padding-left: 20px;
+  border-radius: 20px;
+
+  background: -webkit-linear-gradient(0deg, transparent 50%, #b295cc 50%);
+  background-color: #bfa2db;
+  background-size: 180px 80px;
+  transition: 0.5s;
+}
+
+.welcome-btn:hover {
+  background-position: 90px;
 }

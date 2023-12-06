@@ -5,6 +5,7 @@ import App from "./App";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import AlbumPage from "./pages/AlbumPage";
 import FoldersPage from "./pages/FoldersPage";
+import GalleryPage from "./pages/GalleryPage";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
@@ -20,6 +21,10 @@ const router = createBrowserRouter([
   {
     path: "folder",
     element: <FoldersPage></FoldersPage>,
+  },
+  {
+    path: "gallery",
+    element: <GalleryPage></GalleryPage>,
   },
 ]);
 
