@@ -2,6 +2,7 @@ import React from "react";
 import Gallery from "./components/galleryPage/Gallery";
 import { Leftbar } from "./components/leftBar/LeftBar";
 import "./App.css";
+// import { Link } from "react-router-dom";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
         <Leftbar></Leftbar>
         <Gallery class="gallery"></Gallery>
       </div>
+      {/* <Link to="/welcome">click welcome</Link> */}
     </div>
   );
 }
