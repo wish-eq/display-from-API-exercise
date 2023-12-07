@@ -273,10 +273,17 @@ body {
   border-radius: 10px;
   font-size: 16px;
   margin: 10px;
+
+  background: -webkit-linear-gradient(0deg, transparent 50%, #b19bc7 50%);
+  background-color: #bfa2db;
+  background-size: 140px 80px;
+  transition: 0.6s;
 }
 
 .close-modal:hover {
-  background-color: #b19bc7;
+  /* background-color: #b19bc7; */
+
+  background-position: 70px;
 }
 
 .welcome-container {

@@ -50,7 +50,7 @@ export default function GalleryContainer() {
           <div className="overlay" onClick={closeModal}></div>
           <div className="modal-content flex flex-col items-center justify-between">
             <img
-              className="modal-photo filter grayscale-[100%]"
+              className="modal-photo filter grayscale-[100%] pt-3"
               src={selectedPhoto.url}
               alt="modal-img!"
             />
