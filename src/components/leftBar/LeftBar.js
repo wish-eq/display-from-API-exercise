@@ -19,7 +19,7 @@ import SettingBox from "./SettingBox";
 export class Leftbar extends Component {
   render() {
     return (
-      <div className="side-bar flex flex-col justify-between">
+      <div className="side-bar flex flex-col justify-between bg-[#f4f2f8ad]">
         <div class="top-side-bar">
           <ProfileBox></ProfileBox>
           <LibraryBox></LibraryBox>
