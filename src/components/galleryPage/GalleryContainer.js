@@ -30,16 +30,16 @@ export default function GalleryContainer() {
   return (
     <div className="photo-list-container flex justify-center">
       <ul className="photo-list grid grid-cols-4 grid-rows-3">
-        {filteredRecords.map((record) => (
+        {filteredRecords.map((item) => (
           <li
             className="photo-container flex justify-center items-center"
-            key={record.id}
+            key={item.id}
           >
             <img
               className="photo"
-              src={record.url}
+              src={item.url}
               alt="img!"
-              onClick={() => openModal(record)}
+              onClick={() => openModal(item)}
             />
           </li>
         ))}
