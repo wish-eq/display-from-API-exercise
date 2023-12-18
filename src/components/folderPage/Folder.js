@@ -1,3 +1,4 @@
+import React from "react";
 import FolderHeader from "./FolderHeader";
 import FolderContainer from "./FolderContainer";
 
