@@ -14,14 +14,18 @@ export class CollectionBox extends Component {
               Memories
             </li>
           </Link>
-          <li class="menu-line">
-            <FaUserFriends class="icon" />
-            People
-          </li>
-          <li class="menu-line">
-            <FaLocationArrow class="icon" />
-            Locations
-          </li>
+          <Link class="menu-select" to="/people">
+            <li class="menu-line">
+              <FaUserFriends class="icon" />
+              People
+            </li>
+          </Link>
+          <Link class="menu-select" to="/locations">
+            <li class="menu-line">
+              <FaLocationArrow class="icon" />
+              Locations
+            </li>
+          </Link>
         </ul>
       </div>
     );

@@ -7,6 +7,10 @@ import AlbumPage from "./pages/AlbumPage";
 import FoldersPage from "./pages/FoldersPage";
 import GalleryPage from "./pages/GalleryPage";
 import MemoriesPage from "./pages/MemoriesPage";
+import PeoplePage from "./pages/PeoplePage";
+import LocationsPage from "./pages/LocationsPage";
+import OneDrivePage from "./pages/OneDrivePage";
+import GoogleDrivePage from "./pages/GoogleDrivePage";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
@@ -30,6 +34,22 @@ const router = createBrowserRouter([
   {
     path: "memories",
     element: <MemoriesPage></MemoriesPage>,
+  },
+  {
+    path: "people",
+    element: <PeoplePage></PeoplePage>,
+  },
+  {
+    path: "locations",
+    element: <LocationsPage></LocationsPage>,
+  },
+  {
+    path: "onedrive",
+    element: <OneDrivePage></OneDrivePage>,
+  },
+  {
+    path: "googledrive",
+    element: <GoogleDrivePage></GoogleDrivePage>,
   },
 ]);
 
