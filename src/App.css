@@ -7,6 +7,7 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  background-color: #fffbfa;
 }
 
 /* https://colorhunt.co/palette/f3f1f5f0d9ffbfa2db7f7c82 (palette) */
@@ -258,6 +259,20 @@ body {
   border-radius: 10px;
   max-width: 600px;
   min-width: 400px;
+  min-height: 500px;
+  z-index: 999;
+}
+
+.author-modal-content {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 14px 28px;
+  border-radius: 10px;
+  max-width: 600px;
+  min-width: 500px;
   min-height: 500px;
   z-index: 999;
 }
