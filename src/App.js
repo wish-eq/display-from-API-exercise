@@ -9,7 +9,7 @@ function App() {
     <div className="App">
       <div class="welcome-container flex flex-col items-center justify-center">
         <div class="welcome-text">
-          <Link to="/gallery">Welcome Ja.</Link>
+          <Link to="/gallery">Welcome.</Link>
         </div>
         <div>
           <Link to="/gallery" class="welcome-btn">
